@@ -1,9 +1,9 @@
 package lv2;
 
 public class Harshad {
-    public static boolean main(String[] args) {
+    public boolean solution(int x) {
+
         boolean answer = true;
-        int x = 12;
         int y = 0;
         String str = String.valueOf(x);
 
