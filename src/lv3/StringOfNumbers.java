@@ -1,0 +1,15 @@
+package lv3;
+
+public class StringOfNumbers {
+    public int solution(String s) {
+
+        String[] answer = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+        for(int i = 0; i < answer.length; i++) {
+            if(s.contains(answer[i])) {
+                s = s.replace(answer[i], Integer.toString(i));
+            }
+        }
+        return Integer.parseInt(s);
+    }
+}
